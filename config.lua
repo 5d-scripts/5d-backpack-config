@@ -1,22 +1,48 @@
 _CONFIG = 
 {
     debug = false, -- gives console output for more information
-    bagItem = "backpack",
-    bagInventoryWeight = 250, -- inventory weight that will be set when bag is equipped
-    forceBackpack = -- forces player to wear backpack when item is in inventory.
+    forceBackpack = true, -- forces player to wear backpack when item is in inventory.
+    Backpacks = 
     {
-        enabled = true,
-        backpack = 
         {
-            male = 
+            bagItem = "backpack",
+            bagInventoryWeight = 250, -- inventory weight that will be set when bag is equipped
+            forceBackpack = 
             {
-                bags_1 = 60,
-                bags_2 = 0
-            },
-            female = 
+                backpack = 
+                {
+                    male = 
+                    {
+                        bags_1 = 60,
+                        bags_2 = 0
+                    },
+                    female = 
+                    {
+                        bags_1 = 35,
+                        bags_2 = 0
+                    }
+                }
+            }
+        },
+
+        {
+            bagItem = "backpack2",
+            bagInventoryWeight = 555, -- inventory weight that will be set when bag is equipped
+            forceBackpack = 
             {
-                bags_1 = 35,
-                bags_2 = 0
+                backpack = 
+                {
+                    male = 
+                    {
+                        bags_1 = 32,
+                        bags_2 = 0
+                    },
+                    female = 
+                    {
+                        bags_1 = 21,
+                        bags_2 = 0
+                    }
+                }
             }
         }
     }
